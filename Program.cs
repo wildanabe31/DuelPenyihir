@@ -48,6 +48,17 @@ while (wizardA.Energy > 0 && wizardB.Energy > 0)
 Console.WriteLine("Permainan Berakhir...\n");
 wizardA.ShowStacts();
 wizardB.ShowStacts();
+
+if (wizardB.Energy < wizardA.Energy)
+{
+    Console.WriteLine($"{wizardA.Name} memenangkan duel");
+}
+else
+{
+    Console.WriteLine($"{wizardB.Name} memenangkan duel");
+}
+
+
 public class Wizard
 {
     //deklarasi field
